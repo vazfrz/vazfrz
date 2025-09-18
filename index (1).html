@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vazfrz</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Share Tech Mono', monospace;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .skull-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .skull {
+      position: absolute;
+      width: 80px;
+      opacity: 0.05;
+      animation: floatSkull 50s linear infinite;
+    }
+    @keyframes floatSkull {
+      from { transform: translateY(100vh) rotate(0deg); }
+      to   { transform: translateY(-200px) rotate(360deg); }
+    }
+
+    header {
+      padding: 80px 20px;
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 100px 20px; /* Extra vertical space */
+      max-width: 800px;
+      margin: auto;
+      border-top: 1px solid #222;
+    }
+
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    section p, section a {
+      color: #ddd;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #ff2e2e;
+      border-bottom-color: #ff2e2e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px; /* Extra bottom space */
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background skulls -->
+  <div class="skull-bg">
+    <img src="skull.png" class="skull" style="left:10%; animation-duration: 40s;">
+    <img src="skull.png" class="skull" style="left:35%; animation-duration: 55s; width:100px;">
+    <img src="skull.png" class="skull" style="left:60%; animation-duration: 45s;">
+    <img src="skull.png" class="skull" style="left:80%; animation-duration: 65s; width:120px;">
+  </div>
+
+  <header>
+    <h1>Vazfrz</h1>
+    <p>(yes i made a website)</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>"I love cats, girls, and music.  
+    I made this website so I can make more friends."</p>
+  </section>
+
+  <section>
+    <h2>Connect</h2>
+    <p>📧 Email: <a href="mailto:vazfrz@gmail.com">vazfrz@gmail.com</a></p>
+    <p>🎮 Roblox: <strong>fzvas</strong></p>
+    <p>💬 Discord: <strong>vazfrz</strong></p>
+    <p>🎵 TikTok: <strong>@vvzfrz</strong></p>
+    <p>🎶 Spotify: <a href="https://open.spotify.com/user/31uukqgklr7queiewsl45umfo4la" target="_blank">vazfrz</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vazfrz | Built in the dark 💀</p>
+  </footer>
+</body>
+</html>
